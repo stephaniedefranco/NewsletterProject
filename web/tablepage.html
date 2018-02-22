@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/registrationstyle.css">
+<script src="resources/tablesorter.js"></script>
+
+<head>
+
+    <!--
+
+    Created 2/15/2018 By Stephanie DeFranco
+    File to display a table which displays the mailing list of a newsletter.
+    User can sort by column values.
+    By default, the table is sorted by date subscribed.
+
+    -->
+
+
+    <title>Newsletter Mail List</title>
+</head>
+
+<body>
+
+<article>
+    <header class="page_title">
+        <h1>Newsletter Mail List</h1>
+    </header>
+    <section>
+        <table id="myTable">
+            <tr>
+                <th>
+                    <button onclick="window.location.reload()">&darr;</button>
+                    Date Subscribed
+
+                </th>
+                <th>
+                    <button onclick="sortTable(1)">&darr;</button>
+                    First Name
+
+                    <!--  set sortTable(i) to 1 because its index is 1 in the row  [0,>1<,2,3]-->
+                </th>
+                <th>
+                    <button onclick="sortTable(2)">&darr;</button>
+                    Last Name
+
+                    <!--  set sortTable(i) to 1 because its index is 2 in the row  -->
+                </th>
+                <th>
+                    <button onclick="sortTable(3)">&darr;</button>
+                    E-Mail
+
+                    <!--  set sortTable(i) to 1 because its index is 3 in the row  -->
+                </th>
+
+            </tr>
+            <tbody style="display:none">
+            <tr class="Entries">
+                <td data-field-type="date">11-05-2003</td>
+                <td>Mary</td>
+                <td>Todd</td>
+                <td>MaryTodd@mail.com</td>
+            </tr>
+            <tr class="Entries">
+                <td data-field-type="date">12-06-2016</td>
+                <td>Bill</td>
+                <td>Weiss</td>
+                <td>BillW234_34@ypmail.com</td>
+            </tr>
+            <tr class="Entries">
+                <td data-field-type="date">05-10-2015</td>
+                <td>Bernice</td>
+                <td>Arbetta</td>
+                <td>dancesuperstar84@yahoo.com</td>
+            </tr>
+            <tr class="Entries">
+                <td data-field-type="date">10-12-2011</td>
+                <td>Christopher</td>
+                <td>Platt</td>
+                <td>redsoxfan76@aol.com</td>
+            </tr>
+            <tr class="Entries">
+                <td data-field-type="date">01-10-2018</td>
+                <td>Stephanie</td>
+                <td>Rogers</td>
+                <td>rogers_st@hotmail.com</td>
+            </tr>
+            <tr class="Entries">
+                <td data-field-type="date">06-10-2018</td>
+                <td>Olivia</td>
+                <td>Steinfeld</td>
+                <td>superolive99@gmail.com</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</article>
+
+</body>
+</html>

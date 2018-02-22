@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial;
+    font-size: 20px;
+    background: #e1e4e7;
+    color: #424242;
+}
+
+h1 {
+    font-size:30px;
+    color: #424242;
+}
+form {
+    width:560px;
+    margin:0px auto;
+    padding:30px;
+    background:white;
+}
+article {
+    text-align:center;
+    margin:0px auto;
+}
+
+section {
+
+    border:1px solid gray;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size:13px;
+    background:white;
+    width:700px;
+    margin:0px auto;
+
+}
+form button {
+    text-align: center;
+    margin: 0px auto
+}
+
+label {
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position:absolute;
+    margin-left:0px;
+    width:141px;
+    border:1px solid #8c8c8c;
+    background: #d7d7d8;
+    padding:10px 5px;
+}
+
+input {
+    font-size:13px!important;
+    padding: 10px 5px 9px 5px;
+    width:358px;
+    margin-left:140px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+button {
+    padding: 5px 15px;
+}
+
+input:invalid {
+    border: 1px solid  #8c8c8c;
+    background:#ffa09e;
+}
+
+input:valid {
+    border: 1px solid  #8c8c8c;
+    background: #b6ffb0;
+}
+
+section table {
+    overflow: hidden;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-spacing: 0px;
+    width: 698px;
+
+}
+
+th {
+    background: #efefef;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+    border:0px;
+    border-collapse: collapse;
+}
